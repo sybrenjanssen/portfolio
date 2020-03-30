@@ -8,6 +8,10 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-item.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,8 @@ import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-ite
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

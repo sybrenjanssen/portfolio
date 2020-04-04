@@ -5,9 +5,9 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-  {path: '', component: HomepageComponent},
-  {path: 'over', component: AboutComponent},
-  {path: 'portfolio', component: PortfolioComponent}
+  {path: '', component: HomepageComponent, data: { title: ''}}, // Add title atribute
+  {path: 'about', component: AboutComponent, data: { title: 'About | Sybren Janssen'}},
+  {path: 'portfolio', component: PortfolioComponent, data: { title: 'Portfolio | Sybren Janssen'}}
 ];
 
 @NgModule({

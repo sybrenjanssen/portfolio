@@ -1,3 +1,6 @@
-<main [@fadeAnimation]="getRouterOutletState(o)">
-  <router-outlet #o="outlet"></router-outlet>
-</main>
+<div class="wrapper">
+    <main [@fadeAnimation]="getRouterOutletState(o)">
+        <app-header></app-header>
+        <router-outlet #o="outlet"></router-outlet>
+      </main>
+</div>

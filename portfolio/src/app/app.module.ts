@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioItemComponent } from './portfolio/portfolio-item/portfolio-item.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomepageComponent,
     AboutComponent,
     PortfolioComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

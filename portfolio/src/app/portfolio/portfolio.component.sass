@@ -1,6 +1,44 @@
 .bodyContainer
   width: 100vw
-  height: 100vh
+  height: auto
   position: absolute
-  overflow: hidden
   z-index: -1
+
+  .card
+    width: 80%
+    height: 500px
+    margin: 0 auto
+    background-color: white
+    display: block
+    border-radius: 50px
+    -webkit-filter: drop-shadow(7px 7px 40px rgba(0,0,0,0.15))
+    filter: drop-shadow(7px 7px 40px rgba(0,0,0,0.15))
+    display: flex
+    overflow: hidden
+    margin-bottom: 100px
+
+    .portfolioMeta
+      width: calc(50% - 200px)
+      padding: 100px
+      
+      h2
+        font-size: 2.5em
+        margin-bottom: 30px
+
+      h4
+        font-size: 1.5em
+        color: #cccccc
+        font-weight: 300
+        margin-bottom: 30px
+
+      
+
+    .portfolioImg
+      width: 50%
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+
+    #spotify 
+      background-image: url("../../assets/schipposter.jpg")
+        

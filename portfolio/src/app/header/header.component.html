@@ -3,12 +3,12 @@
       <div class="menuOverlay" @easeInOut>
         <div>
             <ul>
-              <li><a routerLink="/"  (click)="toggleMenu()">Home</a></li>
-              <li><a routerLink="/portfolio"  (click)="toggleMenu()">Portfolio</a></li>
-              <li><a routerLink="/about"  (click)="toggleMenu()">About</a></li>
+              <li @firstMenuItem><a routerLink="/"  (click)="toggleMenu()">Home</a></li>
+              <li @secondMenuItem><a routerLink="/portfolio"  (click)="toggleMenu()">Portfolio</a></li>
+              <li @thirdMenuItem><a routerLink="/about"  (click)="toggleMenu()">About</a></li>
             </ul>
           </div>
-          <div class="footer">
+          <div @footer class="footer">
             <p>© 2020 Lorem ipsum lorem ipsum</p>
           </div>
       </div>

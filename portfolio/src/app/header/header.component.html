@@ -1,32 +1,36 @@
 <div class="headerContainer">
+    <div class="menuEl" *ngIf="toggled" @ngIfAnimation>
+      <div class="menuOverlay" @easeInOut>
+        <div>
+            <ul>
+              <li><a routerLink="/"  (click)="toggleMenu()">Home</a></li>
+              <li><a routerLink="/portfolio"  (click)="toggleMenu()">Portfolio</a></li>
+              <li><a routerLink="/about"  (click)="toggleMenu()">About</a></li>
+            </ul>
+          </div>
+          <div class="footer">
+            <p>© 2020 Lorem ipsum lorem ipsum</p>
+          </div>
+      </div>
+      
+    </div>
     <div class="headerContent">
+
       <div class="logoContainer">
         <a routerLink="" class="logo"><img src="../../assets/Logowhite.svg"></a>
       </div>
   
       <div class="menuContainer">
         <div class="menuWrap">
-          <input type="checkbox" class="toggler">
-          <div class="hamburger">
+          <!-- <input type="checkbox" class="toggler"> -->
+          <button class="toggler" (click)="toggleMenu()"></button>
+          <div class="hamburger" [class.active]="toggled">
             <span></span>
             <span></span>
             <span></span>
-          </div>
-          <div class="menu">
-            <div>
-              <div>
-                <ul>
-                  <li><a routerLink="/">Home</a></li>
-                  <li><a routerLink="/portfolio">Portfolio</a></li>
-                  <li><a routerLink="/about">About</a></li>
-                </ul>
-                <div id="footer">
-                  <p>© 2020</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
     </div>
 </div>

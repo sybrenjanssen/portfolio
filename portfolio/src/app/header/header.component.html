@@ -1,5 +1,5 @@
 <div class="headerContainer">
-    <div class="menuEl" *ngIf="toggled" @ngIfAnimation>
+    <div class="menuWrap" *ngIf="toggled" @ngIfAnimation>
       <div class="menuOverlay" @easeInOut>
         <div>
             <ul>
@@ -21,7 +21,7 @@
       </div>
   
       <div class="menuContainer">
-        <div class="menuWrap">
+        <div class="menuButton">
           <!-- <input type="checkbox" class="toggler"> -->
           <button class="toggler" (click)="toggleMenu()"></button>
           <div class="hamburger" [class.active]="toggled">

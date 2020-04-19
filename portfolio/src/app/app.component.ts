@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
-import { fadeAnimation } from './animations';
+import { pageAnimation } from './animations/pageAnimations';
 
 // Meta info passed into route parameters
 interface PageData {
@@ -13,7 +13,7 @@ interface PageData {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
-  animations: [fadeAnimation]
+  animations: [pageAnimation]
 })
 export class AppComponent implements OnInit {
   defaultTitle = 'Sybren Janssen';

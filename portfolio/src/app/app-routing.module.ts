@@ -6,8 +6,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   {path: '', component: HomepageComponent, data: { title: ''}}, // Add title atribute
-  {path: 'about', component: AboutComponent, data: { title: 'About | Sybren Janssen'}},
-  {path: 'portfolio', component: PortfolioComponent, data: { title: 'Portfolio | Sybren Janssen'}}
+  // {path: 'about', component: AboutComponent, data: { title: 'About | Sybren Janssen'}},
+  // {path: 'portfolio', component: PortfolioComponent, data: { title: 'Portfolio | Sybren Janssen'}}
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
